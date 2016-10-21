@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=no" />
+    <title>座位号信息</title>
+
+    <!--字体样式-->
+    <link href="iconfont/iconfont.css" rel="stylesheet" />
+    <!--<link href="css/supplier-common.css" rel="stylesheet" />-->
+
+    <!--默认样式-->
+    <link href="css/reset_1.0.css" rel="stylesheet" />
+    <link href="css/fdpage.css" rel="stylesheet" />
+    <!--座位号样式-->
+    <link href="css/holdSeat.css" rel="stylesheet" />
+</head>
+
+<body>
+    <article>
+        <header class="headertitle">
+            <!--<p class="header_h50 common-pad15 ft-666 fb">您目前的绑定信息为：</p>-->
+
+            <span class="fl iconfont ft-green h44 mar-l15" style="position:absolute">&#xe609;</span>
+            <span class="ft-green fr h44 mar-r15 -mar-l40" onclick="alert(holdSeat.HasSelectedSeat());">完成</span>
+            <p class="header_h44 text-c ft17 ">座位号信息</p>
+
+        </header>
+
+        <section class="bgWhite bod-b">
+            <p class="h53 ft16 mar-l15 ">
+                车辆信息
+                <span class="tagcar"></span>
+                <span class="ft14 ft-666">可预订</span>
+                <span class="tagcar bggray"></span>
+                <span class="ft14 ft-666">满员</span>
+
+            </p>
+            <div class="statebox">
+                
+                <p class="">
+                    <span class="tag selectseat active" seatcount="16">1号车</span>
+                    <span class="tag selectseat" seatcount="20">2号车</span>
+                    <span class="tag full selectseat" seatcount="33">3号车</span>
+                    <span class="tag full selectseat" seatcount="37">4号车</span>
+                </p>
+
+                
+            </div>
+        </section>
+
+        <section class="text-c h54 stateiconbox">
+            <div class="stateicon ico-red">
+                <em class="stateicon-b"></em>
+            </div>
+            <span class="title">已售</span>
+
+            <div class="stateicon ico-white">
+                <em class="stateicon-b"></em>
+            </div>
+            <span class="title">待售</span>
+
+            <div class="stateicon ico-yellow">
+                <em class="stateicon-b"></em>
+            </div>
+            <span class="title">选中</span>
+
+            <div class="stateicon ico-full">
+                <em class="stateicon-b"></em>
+            </div>
+            <span class="title">满员</span>
+        </section>
+        
+        <form>
+            <!--<select id="select">
+                <option selected="selected">请选择乘坐类型</option>
+                <option>16</option>
+                <option>19</option>
+                <option>20</option>
+                <option>33</option>
+                <option>35</option>
+                <option>37</option>
+                <option>45</option>
+                <option>49</option>
+                <option>51</option>
+                <option>53</option>
+                <option>57</option>
+                <option>65</option>
+            </select>-->
+            <!--<button>占位</button>-->
+            <div id="takeYourSeat">
+                <table class="top">
+                    <!--<tr>
+                        <td><div class="topSeatImg"></div>可选座位</td>
+                        <td><div class="topSeatImg holded"></div>已选座位</td>
+                        <td><div class="topSeatImg select"></div>已占座位</td>
+                    </tr>-->
+                </table>
+            </div>
+            <!--<button onclick="alert(holdSeat.HasSelectedSeat());">提交</button>-->
+        </form>
+    </article>
+
+    <!--JS-->
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/fit_6p_414_v1.0.js"></script>
+
+    <script src="js/fdpage.js"></script>
+    <!--座位号JS-->
+    <script src="js/holdSeat.js"></script>
+
+
+    <script type="text/javascript">
+        //$(function () {
+        //    $('.hTop li').on('click', function () {
+        //        $(this).addClass('active').siblings().removeClass('active');
+        //    });
+        //});
+
+        //集合中的每个数组按顺序代表一个车位编号
+        var holdedSeatArr = [[2, 7, 9],[1,2,3,4,5,8]];
+
+        $(function () {
+            //默认16座类型
+            $("#takeYourSeat").html(holdSeat.CreateHtmlStr("seat16"));
+            //holdSeat.AddHoldedAndNumber($("#takeYourSeat .seat"), holdedSeatArr);//传入16座已占座位
+
+            //判断是否为满员座位号
+            //debugger
+            if ($(".selectseat").eq(0).hasClass("full")) {
+                holdSeat.AddFullAndNumber($("#takeYourSeat .seat"), $(".seat").length);
+            }
+            else {
+
+                holdSeat.AddHoldedAndNumber($("#takeYourSeat .seat"), holdedSeatArr[0]);
+            }
+
+
+            //为select绑定切换方法
+            $(".selectseat").on("click", function () {
+                $(".selectseat").removeClass("active")
+                $(this).addClass("active")
+                var seatType = "seat" + $(this).attr("seatcount");
+                $("#takeYourSeat").html(holdSeat.CreateHtmlStr(seatType));
+                //debugger;
+                if ($(this).hasClass("full")) {
+                    holdSeat.AddFullAndNumber($("#takeYourSeat .seat"), $(".seat").length);
+                }
+                else {
+                    
+                    holdSeat.AddHoldedAndNumber($("#takeYourSeat .seat"), holdedSeatArr[$(this).index()]);
+                }
+                
+            });
+        })
+    </script>
+</body>
+</html>

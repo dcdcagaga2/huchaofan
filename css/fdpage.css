@@ -122,7 +122,7 @@ article { width: 4.14rem; }
 
 /*=================绑定管理-单账号（多账号进入，非默认账号）=================*/
 /*标题*/
-.header_h50 { line-height: 0.50rem; border-top: 0.01rem #e4e4e4 solid; border-bottom: 0.01rem #e4e4e4 solid; width: 100%; background-color: #fff; }
+.header_h50 { line-height: 0.50rem; border-top: 0.01rem #e4e4e4 solid; border-bottom: 0.01rem #e4e4e4 solid; width: 3.84rem; background-color: #fff; }
 
 /*用户信息*/
 .usercontact { padding-top: 20px; padding-bottom: 20px; color: #666; border-bottom: 0.01rem #e4e4e4 solid; }
@@ -138,7 +138,7 @@ article { width: 4.14rem; }
 .tag { padding: 2px 5px; color: white; margin-left: 10px; }
 
 /*标题*/
-.header_h50 { line-height: 0.50rem; border-top: 0.01rem #e4e4e4 solid; border-bottom: 0.01rem #e4e4e4 solid; width: 100%; background-color: #fff; }
+.header_h50 { line-height: 0.50rem; border-top: 0.01rem #e4e4e4 solid; border-bottom: 0.01rem #e4e4e4 solid; width: 3.84rem; background-color: #fff; }
 
 /*用户信息 上下边框*/
 .usercontact_tb { padding-top: 20px; padding-bottom: 20px; border-bottom: 0.01rem #e4e4e4 solid; border-top: 0.01rem #e4e4e4 solid; }
@@ -151,7 +151,7 @@ article { width: 4.14rem; }
 .tag { padding: 2px 5px; color: white; margin-left: 10px; }
 
 /*标题*/
-.header_h50 { line-height: 0.50rem; border-top: 0.01rem #e4e4e4 solid; border-bottom: 0.01rem #e4e4e4 solid; width: 100%; background-color: #fff; }
+.header_h50 { line-height: 0.50rem; border-top: 0.01rem #e4e4e4 solid; border-bottom: 0.01rem #e4e4e4 solid; width: 3.84rem; background-color: #fff; }
 
 /*用户信息 上下边框 段落下划线*/
 .usercontact_tb_ul { border-bottom: 0.01rem #e4e4e4 solid; }
