@@ -6,6 +6,10 @@
 
 body { font-size: 0.14rem; color: #333; background: #eee; font-family: 微软雅黑; margin: 0 auto; }
 
+input[type="button"], input[type="submit"], input[type="reset"] { -webkit-appearance: none; }
+
+textarea { -webkit-appearance: none; }
+
 article { width: 4.14rem; }
 
 .lh25 { line-height: 0.25rem; }
@@ -110,7 +114,7 @@ article { width: 4.14rem; }
 
 /*表头样式*/
 .headertitle { padding-bottom: 0.44rem; }
-.headertitle span { z-index:1;position:relative; }
+.headertitle span { z-index: 1; position: relative; }
 .header_h44 { position: fixed; line-height: 0.44rem; border-top: 0.01rem #e4e4e4 solid; width: 100%; background-color: #fff; box-shadow: #ccc 0rem 0.02rem 0.03rem 0rem; }
 
 /*省略号限制*/
@@ -568,19 +572,19 @@ span.h57 { line-height: 0.57rem; }
 
 
 .editAd { background-color: white; }
-.editAd li { position:relative; line-height: 0.23rem; font-size: 0.16rem; padding-top: 0.15rem; color: #333; width: 3.84rem; /*height:0.56rem;*/ padding-bottom: 0.15rem; padding-left: 0.15rem; padding-right: 0.15rem; }
+.editAd li { position: relative; line-height: 0.23rem; font-size: 0.16rem; padding-top: 0.15rem; color: #333; width: 3.84rem; /*height:0.56rem;*/ padding-bottom: 0.15rem; padding-left: 0.15rem; padding-right: 0.15rem; }
 .editAd li p { display: inline-block; width: 3.60rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 
-.editAd li div span em {position: absolute; top: 35%; right: 0.15rem; line-height: normal; font-size: 0.20rem; color: white; vertical-align: middle;  }
-.editAd li.active {background-color:#eeeeee; }
-.editAd li.active em{color:#33be61;}
+.editAd li div span em { position: absolute; top: 35%; right: 0.15rem; line-height: normal; font-size: 0.20rem; color: white; vertical-align: middle; }
+.editAd li.active { background-color: #eeeeee; }
+.editAd li.active em { color: #33be61; }
 
 .editAd li .w360 { width: 3.6rem; }
 .editAd li p.ft999 { color: #999; }
 
 p.h53 { line-height: 0.53rem; }
 .editAd li.pad0 { padding: 0rem; }
-.editAd li.underLine div { width: 100%; height: 0.01rem; border-bottom: 0.01rem #e4e4e4 solid; line-height: 0.01rem;    margin-top: -0.02rem; }
+.editAd li.underLine div { width: 100%; height: 0.01rem; border-bottom: 0.01rem #e4e4e4 solid; line-height: 0.01rem; margin-top: -0.02rem; }
 .editAd li.underLine { padding: 0rem; margin: auto; height: 0.01rem; }
 .editAdImg .img { width: 4.14rem; height: 2.08rem; }
 .editAdImg .img img { width: 4.14rem; zoom: 1; }
