@@ -1,0 +1,30 @@
+﻿
+#takeYourSeat table { margin:0 auto; border-collapse: collapse; font-size:12px; font-family:"微软雅黑"; }
+#takeYourSeat table td { width:48px; height:20px; padding:0.120rem; }
+.seat {position: relative; width:0.55rem; height:0.34rem; line-height:0.28rem; color:#999; font-size:0.17rem;  text-align:center; border-radius:0.05rem; background-color:white; cursor:pointer; border-radius:0.05rem;border:0.01rem solid #999;overflow:hidden; }
+    .seat.select { border: 0.01rem solid #ac6a00; background-color: #f8b551;color:white; }
+    .seat.select em { border-top: 0.01rem solid #ac6a00; background-color: #f39800; }
+
+    .seat.holded { border: 0.01rem solid #b80f00; background-color: #fb9086;color:white; }
+    .seat.holded em { border-top: 0.01rem solid #b80f00; background-color: #ff7c70;border-bottom-left-radius:0.05rem; }
+
+    .seat.full { border: 0.01rem solid #999; background-color: #d4d4d4;color:white;cursor:initial; }
+    .seat.full em { border-top: 0.01rem solid #adadad; background-color: #c9c9c9;border-bottom-left-radius:0.05rem; }
+    /*.seat:hover { background-color:#d7f7bb; }*/
+    /*.seat.holded:hover { background-color:#ffbd6c; }*/
+
+    .seat-b { position: absolute;left:0rem; bottom: 0rem;width:0.55rem; height: 0.06rem; }
+  .seat em { border-top: 0.01rem solid #999; background-color:white;border-bottom-left-radius:0.05rem;border-bottom-right-radius:0.05rem; }
+
+
+
+
+/*表头图标*/
+#takeYourSeat table.top { height:20px; line-height:20px; margin-bottom:20px; }
+    #takeYourSeat table.top td { vertical-align:middle; width:auto; padding:5px 10px; }
+.topSeatImg { display:inline-block; *display:inline; *zoom:1; margin-right:8px; width:14px; height:8px; background-color:#ddd; }
+    .topSeatImg.select { background-color:#d7f7bb; }
+    .topSeatImg.holded { background-color:#ffbd6c; }
+
+
+
