@@ -12,6 +12,8 @@ textarea { -webkit-appearance: none; }
 
 article { width: 4.14rem; }
 
+.dis-inlineb{display:inline-block;}
+
 .lh25 { line-height: 0.25rem; }
 
 .text-c { text-align: center; }
@@ -297,10 +299,16 @@ article { width: 4.14rem; }
 
 .setupinfo_1 li .img { display: inline-block; width: 0.87rem; height: 0.87rem; overflow: hidden; border-radius: 50%; }
 .setupinfo_1 li .img img { width: 0.87rem; height: 0.87rem; zoom: 1; }
-/*按钮*/
-.setupinfo_1 li input.btn { width: 1rem; height: 0.30rem; border-radius: 0.15rem; border: none; font-size: 0.16rem; color: white; margin: 0.13rem 0; line-height: 0.16rem; }
+/*按钮 版本1*/
+.setupinfo_1 li input.btn { width: 1rem; height: 0.30rem; border-radius: 0.15rem; border: none; font-size: 0.16rem;cursor:pointer; color: white; margin: 0.13rem 0; line-height: 0.16rem; }
+
+/*按钮 版本2*/
+.setupinfo_1 li a.btn { width: 1rem; height: 0.30rem; border-radius: 0.15rem; border: none; font-size: 0.16rem;cursor:pointer; color: white; margin: 0.13rem 0; line-height: 0.16rem; }
+
 /*照片*/
 .setupinfo_1 li .photo { width: 3.84rem; height: 1.28rem; background-color: #eee; margin-bottom: 0.26rem; }
+
+.setupinfo_1 li .photo img{zoom:1;width: 3.84rem; height: 1.28rem;}
 
 .setupinfo_1 li.nobbord { border-bottom: 0px; }
 
@@ -416,7 +424,7 @@ span.h57 { line-height: 0.57rem; }
 
 .nav_list { line-height: 0.58rem; width: 4.14rem; text-align: center; border-top: 0.01rem #e4e4e4 solid; }
 
-.nav_list li { float: left; width: 0.828rem; display: inline-block; font-size: 0.17rem; }
+.nav_list li { float: left; width: 0.820rem; display: inline-block; font-size: 0.17rem; }
 
 .nav_list li p { display: inline-block; width: 0.86rem; }
 
@@ -448,7 +456,7 @@ span.h57 { line-height: 0.57rem; }
 
 .orderlist li p span.name { font-size: 0.14rem; line-height: 0.20rem; width: 2.38rem; word-break: break-all; }
 
-.orderlist li p .btnHollow { width: 0.84rem; height: 0.28rem; line-height: 0.28rem; border-radius: 0.03rem; border: 0.01rem solid #ff7c70; text-align: center; font-size: 0.14rem; background-color: #fff; }
+.orderlist li p .btnHollow { width: 0.84rem; height: 0.28rem; line-height: 0.28rem; border-radius: 0.03rem; border: 0.01rem solid #ff7c70; text-align: center; margin-top: 0.15rem;margin-bottom: 0.15rem; font-size: 0.14rem; background-color: #fff; }
 
 .mar-b7 { margin-bottom: 0.07rem; }
 
