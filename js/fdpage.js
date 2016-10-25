@@ -104,7 +104,7 @@ $(function () {
 
 
 
-    //品牌名称修改
+    //品牌名称修改*************
 
     //列表页输入框 start
     var timerLen = null;
@@ -148,11 +148,20 @@ $(function () {
     });
 
 
-    //修改店铺地址
+
+
+
+    //修改店铺地址***********
     $(".editAd li").click(function () {
         //debugger;
         $(".editAd li").removeClass("active");
         $(this).addClass("active");
+    })
+
+
+    $(".setupinfo_1 img,.setupinfo_1 ").click(function () {
+        //debugger;
+        $(this).prev().click();
     })
 
 })

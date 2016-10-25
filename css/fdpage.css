@@ -305,12 +305,15 @@ article { width: 4.14rem; }
 /*按钮 版本2*/
 .setupinfo_1 li a.btn { width: 1rem; height: 0.30rem; border-radius: 0.15rem; border: none; font-size: 0.16rem;cursor:pointer; color: white; margin: 0.13rem 0; line-height: 0.16rem; }
 
-/*照片*/
-.setupinfo_1 li .photo { width: 3.84rem; height: 1.28rem; background-color: #eee; margin-bottom: 0.26rem; }
+/*照片 上传*/
+.setupinfo_1 li .phototitle{cursor:pointer;}
+.setupinfo_1 li .photo {position:relative ;width: 3.84rem; height: 1.28rem; background-color: #eee; margin-bottom: 0.26rem; }
 
-.setupinfo_1 li .photo img{zoom:1;width: 3.84rem; height: 1.28rem;}
+.setupinfo_1 li .photo img{position:absolute;z-index:5; zoom:1;width: 3.84rem; height: 1.28rem;}
 
-.setupinfo_1 li.nobbord { border-bottom: 0px; }
+.setupinfo_1 li .photo input{position:absolute;}
+
+.setupinfo_1 li.nobbord { border-bottom: 0px;z-index:4; }
 
 .h44 { line-height: 0.44rem; }
 
