@@ -159,9 +159,21 @@ $(function () {
     })
 
 
-    $(".setupinfo_1 img,.setupinfo_1 ").click(function () {
+    //个人设置
+    //点击上传效果(门店)
+    $(".setupinfo_1 img,.setupinfo_1 .phototitle").click(function (event) {
         //debugger;
-        $(this).prev().click();
+        $(this).parents("li").find("input").click();
+        event.stopPropagation();
+    })
+    //点击上传效果(企业照片)
+    $(".setupinfo_1 .img").click(function (event) {
+        //debugger;
+        //event.stopPropagation();
+        $(".setupinfo_1 .img").unbind("click");
+        $(this).parents("div").find("input").click();
+        
+        return false;
     })
 
 })

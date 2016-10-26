@@ -113,11 +113,14 @@ article { width: 4.14rem; }
 
 .mar-l65 { margin-left: 0.65rem; }
 
+.pad-l15{padding-left:0.15rem}
+.pad-r15{padding-right:0.15rem}
+
 
 /*表头样式*/
 .headertitle { padding-bottom: 0.44rem; }
-.headertitle span { z-index: 1; position: relative; }
-.header_h44 { position: fixed; line-height: 0.44rem; border-top: 0.01rem #e4e4e4 solid; width: 100%; background-color: #fff; box-shadow: #ccc 0rem 0.02rem 0.03rem 0rem; }
+.headertitle span { z-index: 11; position: relative;padding-left:0.15rem;padding-right:0.15rem; }
+.header_h44 { position: fixed; z-index:10; line-height: 0.44rem; border-top: 0.01rem #e4e4e4 solid; width: 100%; background-color: #fff; box-shadow: #ccc 0rem 0.02rem 0.03rem 0rem; }
 
 /*省略号限制*/
 .elips { display: inline-block; width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -297,8 +300,9 @@ article { width: 4.14rem; }
 .setupinfo_1 li .navArrow { float: right; font-size: 0.14rem; color: #c9c9c9; }
 
 
-.setupinfo_1 li .img { display: inline-block; width: 0.87rem; height: 0.87rem; overflow: hidden; border-radius: 50%; }
-.setupinfo_1 li .img img { width: 0.87rem; height: 0.87rem; zoom: 1; }
+.setupinfo_1 li .img { position:relative; display: inline-block; width: 0.87rem; height: 0.87rem; overflow: hidden; border-radius: 50%; }
+.setupinfo_1 li .img img { position:absolute;z-index:5; width: 0.87rem; height: 0.87rem; zoom: 1; }
+.setupinfo_1 li .img input { position:absolute;z-index:4; }
 /*按钮 版本1*/
 .setupinfo_1 li input.btn { width: 1rem; height: 0.30rem; border-radius: 0.15rem; border: none; font-size: 0.16rem;cursor:pointer; color: white; margin: 0.13rem 0; line-height: 0.16rem; }
 

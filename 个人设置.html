@@ -23,38 +23,55 @@
 
 
         <header class=" clear headertitle">
-            <span class="fl iconfont ft-green h44 mar-l15" style="position:absolute">&#xe609;</span>
+            <span class="fl iconfont ft-green h44 cur-p" style="position:absolute" onclick="javascript:history.back(-1)" >&#xe609;</span>
             <p class="header_h44 text-c ft-666 ft17">个人设置</p>
         </header>
         <section>
             <ul class="lh25  bgWhite setupinfo_1 ">
                 <li class="h87 pad-bt15">
-                    <span>企业Logo</span><span class="fr iconfont mar-l13 navArrow">&#xe601;</span>
-                    <div class="img fr">
-                        <img src="images/guest1.png" />
+                    <div class=" cur-p enterprise">
+                        <span>企业Logo</span><span class="fr iconfont mar-l13 navArrow">&#xe601;</span>
+                        <div class="img fr">
+                            <input accept="image/*" type="file" />
+                            <img src="images/guest1.png" />
+                        </div>
                     </div>
                 </li>
                 <li class="clear">企业名称<span class="fr mar-r16">什么什么和什么什么和什么旅行社</span></li>
-                <li>店铺名称 <span class="fr iconfont navArrow">&#xe601;</span><span class="fr  mar-r16">什么和什么旅行社</span></li>
+                <li>
+                    店铺名称
+                    <div class="fr cur-p" onclick="location = '品牌名称修改.html'">
+                        <span class=" iconfont navArrow">&#xe601;</span>
+                        <span class="  mar-r16">什么和什么旅行社</span>
+                    </div>
+                </li>
             </ul>
         </section>
 
         <section>
             <ul class="lh25 mar-t10  bgWhite setupinfo_1 ">
                 <li>
+
                     固定电话
-                    <span class="fr iconfont navArrow">&#xe601;</span>
-                    <span class="fr  mar-r16">021-12345678</span>
+                    <div class="fr cur-p" onclick="location = '修改客服电话.html'">
+                        <span class="iconfont navArrow">&#xe601;</span>
+                        <span class="  mar-r16">021-12345678</span>
+                    </div>
                 </li>
                 <li>
                     传真
-                    <span class="fr iconfont navArrow">&#xe601;</span>
-                    <span class="fr  mar-r16">021-12345645</span>
+                    <div class="fr cur-p" onclick="location = '修改客服电话.html'">
+                        <span class=" iconfont navArrow">&#xe601;</span>
+                        <span class="  mar-r16 cur-p">021-12345645</span>
+                    </div>
                 </li>
                 <li>
                     客服电话1
-                    <span class="fr iconfont navArrow">&#xe601;</span>
-                    <span class="fr  mar-r16">137 1234 5678</span>
+                    <div class="fr cur-p" onclick="location = '修改客服电话.html'">
+                        <span class=" iconfont navArrow">&#xe601;</span>
+                        <span class="  mar-r16">137 1234 5678</span>
+                    </div>
+
                 </li>
 
                 <li class="clear">
@@ -68,12 +85,15 @@
             <ul class="lh25 mar-t10  bgWhite setupinfo_1 ">
                 <li>
                     企业位置
-                    <span class="fr iconfont navArrow">&#xe601;</span>
-                    <span class="fr  mar-r16">上海宝山区高境镇什么什么小区什</span>
+                    <div class="fr cur-p" onclick="location = '修改店铺地址.html'">
+                        <span class=" iconfont navArrow">&#xe601;</span>
+                        <span class="  mar-r16">上海宝山区高境镇什么什么小区什</span>
+                    </div>
                 </li>
+
                 <li>
-                    <p class="phototitle">门店外照片<span class="fr iconfont navArrow">&#xe601;</span></p> 
-                    
+                    <p class="phototitle">门店外照片<span class="fr iconfont navArrow">&#xe601;</span></p>
+
                     <!--<span class="fr  mar-r16">021-12345645</span>-->
                     <div class="photo">
                         <input accept="image/*" type="file" />
@@ -85,14 +105,20 @@
                     门店内营业现场照片
                     <span class="fr iconfont navArrow">&#xe601;</span>
                     <!--<span class="fr  mar-r16">021-12345645</span>-->
-                    <div class="photo"></div>
+                    <div class="photo">
+                        <input accept="image/*" type="file" />
+                        <img src="images/bg1.jpg" />
+                    </div>
                 </li>
 
                 <li class="nobbord clear">
                     门店内营业执照照片
                     <span class="fr iconfont navArrow">&#xe601;</span>
                     <!--<span class="fr  mar-r16">021-12345645</span>-->
-                    <div class="photo"></div>
+                    <div class="photo">
+                        <input accept="image/*" type="file" />
+                        <img src="images/bg1.jpg" />
+                    </div>
                 </li>
             </ul>
         </section>
